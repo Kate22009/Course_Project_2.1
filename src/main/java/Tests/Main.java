@@ -72,30 +72,30 @@ public class Main {
      }
 
         /* First test A. Intro & Registration screen*/
-//        @Test
-//        public void test_01 () {
-//            try {
-//                SignUp signup1 = new SignUp();
-//                signup1.openPage();
-//                signup1.signup();
-//
-//                /*Assertion of all text fields in the registration window after entering the constant values*/
-//                Assert.assertEquals(driver.findElement(new By.ByCssSelector("input[placeholder='שם פרטי']")).getAttribute("value"), SignUp.EXPNAME);
-//                System.out.println(driver.findElement(new By.ByCssSelector("input[placeholder='שם פרטי']")).getAttribute("value"));
-//                Assert.assertEquals(driver.findElement(new By.ByCssSelector("input[type=email]")).getAttribute("value"), SignUp.EXPMAIL);
-//                System.out.println(driver.findElement(new By.ByCssSelector("input[type=email]")).getAttribute("value"));
-//                Assert.assertEquals(driver.findElement(new By.ByCssSelector("input[type=password]")).getAttribute("value"), SignUp.EXPPASS);
-//                System.out.println(driver.findElement(new By.ByCssSelector("input[type=password]")).getAttribute("value"));
-//                Assert.assertEquals(driver.findElement(new By.ByCssSelector("input[placeholder='אימות סיסמה']")).getAttribute("value"), SignUp.EXCPASS);
-//                System.out.println(driver.findElement(new By.ByCssSelector("input[placeholder='אימות סיסמה']")).getAttribute("value"));
-//
-//                signup1.login();
-//                test.pass("details", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenShot(timeNow)).build());
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//                test.log(com.aventstack.extentreports.Status.FAIL, "Registration failed" + e.getMessage());
-//            }
-//        }
+        @Test
+        public void test_01 () {
+            try {
+                SignUp signup1 = new SignUp();
+                signup1.openPage();
+                signup1.signup();
+
+                /*Assertion of all text fields in the registration window after entering the constant values*/
+                Assert.assertEquals(driver.findElement(new By.ByCssSelector("input[placeholder='שם פרטי']")).getAttribute("value"), SignUp.EXPNAME);
+                System.out.println(driver.findElement(new By.ByCssSelector("input[placeholder='שם פרטי']")).getAttribute("value"));
+                Assert.assertEquals(driver.findElement(new By.ByCssSelector("input[type=email]")).getAttribute("value"), SignUp.EXPMAIL);
+                System.out.println(driver.findElement(new By.ByCssSelector("input[type=email]")).getAttribute("value"));
+                Assert.assertEquals(driver.findElement(new By.ByCssSelector("input[type=password]")).getAttribute("value"), SignUp.EXPPASS);
+                System.out.println(driver.findElement(new By.ByCssSelector("input[type=password]")).getAttribute("value"));
+                Assert.assertEquals(driver.findElement(new By.ByCssSelector("input[placeholder='אימות סיסמה']")).getAttribute("value"), SignUp.EXCPASS);
+                System.out.println(driver.findElement(new By.ByCssSelector("input[placeholder='אימות סיסמה']")).getAttribute("value"));
+
+                signup1.login();
+                test.pass("details", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenShot(timeNow)).build());
+            } catch (Exception e) {
+                e.printStackTrace();
+                test.log(com.aventstack.extentreports.Status.FAIL, "Registration failed" + e.getMessage());
+            }
+        }
 
         /* Second test  B. Home Screen*/
         @Test

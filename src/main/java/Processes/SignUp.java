@@ -18,13 +18,13 @@ public class SignUp extends BasePage {
 
     public  void  login(){ pressLogin(); }
 
-
+/*opens the signup page on Buyme*/
     private void openSignupPage() {
         clickElement(By.className("seperator-link"));
         clickElement(By.className("theme"));
 
     }
-
+/* enters user credentials: name, email, password, password confirmation*/
     private void enterCredentials() {
         sendKeysToElement(By.cssSelector("input[type=text]"), EXPNAME);
         sendKeysToElement(By.cssSelector("input[type=email]"), EXPMAIL);
@@ -34,7 +34,7 @@ public class SignUp extends BasePage {
     }
 
 
-
+/*presses the login button*/
     private void pressLogin(){
         clickElement(By.cssSelector("button[type=submit]"));
     }

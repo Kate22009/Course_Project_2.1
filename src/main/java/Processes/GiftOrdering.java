@@ -17,8 +17,7 @@ public class GiftOrdering extends BasePage {
     }
 
 
-    /* Press radio
-button*/
+    /* Press radio button*/
     private void pressToSmbElseOption() {
         clickElement(new By.ByClassName("button-forSomeone"));
     }
@@ -42,9 +41,9 @@ button*/
         }
         /*Upload a picture*/
     private void uploadPicture () {
-//        clickElement(new By.ByCssSelector("label[class='media-circle-btn ember-view bm-media-upload'] div[class='bm-caption-2']"));
+
         sendKeysToElement (new By.ByXPath("//input[@name='logo']"), "E:\\QA experts\\Automation\\pic1.jpeg");}
-//    media-circle-btn ember-view bm-media-upload
+
         /*Click on Continue button*/
         private void clickButton () {
             clickElement(new By.ByCssSelector("button[gtm='המשך']"));
