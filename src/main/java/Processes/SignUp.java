@@ -1,5 +1,7 @@
+package Processes;
+
+import BasePart.BasePage;
 import org.openqa.selenium.By;
-import org.testng.Assert;
 
 
 public class SignUp extends BasePage {
@@ -12,7 +14,7 @@ public class SignUp extends BasePage {
 
     public void openPage() { openSignupPage(); }
 
-    public void signup() throws Exception { enterCredentials(); }
+    public void signup() { enterCredentials(); }
 
     public  void  login(){ pressLogin(); }
 
@@ -23,7 +25,7 @@ public class SignUp extends BasePage {
 
     }
 
-    private void enterCredentials() throws Exception {
+    private void enterCredentials() {
         sendKeysToElement(By.cssSelector("input[type=text]"), EXPNAME);
         sendKeysToElement(By.cssSelector("input[type=email]"), EXPMAIL);
         sendKeysToElement(By.cssSelector("input[type=password]"), EXPPASS);

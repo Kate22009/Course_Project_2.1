@@ -1,7 +1,11 @@
+package Processes;
+
+import BasePart.BasePage;
+import BasePart.DriverSingleton;
 import org.openqa.selenium.By;
 
 public class PickBusiness extends BasePage {
-    public void pickBusiness () throws Exception {
+    public void pickBusiness () {
     pickGiftCard();
     enterPrice();
     }
@@ -14,7 +18,7 @@ private void pickGiftCard (){
     System.out.println(DriverSingleton.getDriverInstance().findElements(new By.ByClassName("bm-product-card-link")).size());
     }
 
-    private void enterPrice () throws Exception {
+    private void enterPrice () {
     sendKeysToElement(new By.ByCssSelector("input[placeholder='הכנס סכום']"),"142");
     clickElement(new By.ByCssSelector("button[gtm='בחירה']"));
     }

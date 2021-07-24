@@ -1,6 +1,10 @@
+package Processes;
+
+import BasePart.BasePage;
+import BasePart.DriverSingleton;
 import org.openqa.selenium.By;
 
-public class Filters extends BasePage{
+public class Filters extends BasePage {
 
 
     public void filter (){

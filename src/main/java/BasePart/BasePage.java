@@ -1,3 +1,4 @@
+package BasePart;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -19,10 +20,9 @@ public class BasePage {
     }
 
     /*method that clears text from field*/
-    public void clearText(By locator) throws Exception {
+    public void clearText(By locator) {
         getWebElement(locator).clear();
     }
-
 
 
 }

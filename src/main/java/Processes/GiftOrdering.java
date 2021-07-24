@@ -1,10 +1,13 @@
+package Processes;
+
+import BasePart.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebElement;
 
 public class GiftOrdering extends BasePage {
 
-    public void ordering() throws Exception {
+    public void ordering() {
         pressToSmbElseOption();
         enterReceiverName();
         pickEvent();
@@ -21,7 +24,7 @@ button*/
     }
 
     /*Enter receiver name*/
-    private void enterReceiverName() throws Exception {
+    private void enterReceiverName() {
         sendKeysToElement(new By.ByCssSelector("input[type=text]"), "Kate");
     }
 
@@ -33,7 +36,7 @@ button*/
     }
         /*Enter a blessing*/
 
-    private void enterBlessing() throws Exception  {
+    private void enterBlessing() {
             clearText(new By.ByCssSelector("textarea"));
             sendKeysToElement(new By.ByCssSelector("textarea"), "Happy birthday");
         }
